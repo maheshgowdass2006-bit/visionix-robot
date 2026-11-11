@@ -1,0 +1,81 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #101827;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+/* VISIONIX robot control panel */
+#robot-controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  width: min(340px, calc(100vw - 40px));
+  padding: 18px;
+  border: 1px solid #3b536d;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.94);
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+#robot-controls h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+#robot-controls p {
+  margin: 8px 0;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.control-buttons button {
+  flex: 1;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #0891b2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.control-buttons button:hover {
+  background: #0e7490;
+}
+
+#pause-btn {
+  background: #475569;
+}
+
+#reset-btn {
+  background: #b45309;
+}
